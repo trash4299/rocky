@@ -11,16 +11,19 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>class TerrainTileRenderModel - Rocky</title>
+        <title>struct TerrainTileRenderModel - Rocky</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
       
 
@@ -45,7 +48,6 @@
 
     
     
-    
   </head>
   
   
@@ -58,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-terraintilerendermodel" class="md-skip">
+        <a href="#struct-terraintilerendermodel" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              class TerrainTileRenderModel
+              struct TerrainTileRenderModel
             
           </span>
         </div>
@@ -195,9 +197,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -228,9 +235,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Reference
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -239,7 +251,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            API Reference
+            
+  
+    API Reference
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -255,9 +271,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Index
+  
+
     
   </span>
+  
   
 
       </a>
@@ -302,7 +323,9 @@
         <li class="md-nav__item">
   <a href="#members" class="md-nav__link">
     <span class="md-ellipsis">
-      Members
+      
+        Members
+      
     </span>
   </a>
   
@@ -311,7 +334,9 @@
         <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Functions
+      
+        Functions
+      
     </span>
   </a>
   
@@ -321,7 +346,9 @@
           <li class="md-nav__item">
   <a href="#applyscalebias" class="md-nav__link">
     <span class="md-ellipsis">
-      applyScaleBias
+      
+        applyScaleBias
+      
     </span>
   </a>
   
@@ -342,23 +369,27 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
 
-<h1 id="class-terraintilerendermodel">class TerrainTileRenderModel</h1>
-<p><em>Defined at src/rocky/vsg/terrain/TerrainTileNode.h#63</em></p>
+<h1 id="struct-terraintilerendermodel">struct TerrainTileRenderModel</h1>
+<p><em>Defined at src/rocky/vsg/terrain/TerrainState.h#58</em></p>
+<p>Everything needed to render a single tile</p>
 <h2 id="members">Members</h2>
 <p>public int modelMatrix</p>
 <p>public TextureData color</p>
 <p>public TextureData elevation</p>
+<p>public float minHeight</p>
+<p>public float maxHeight</p>
 <p>public TerrainTileDescriptors descriptors</p>
 <h2 id="functions">Functions</h2>
 <h3 id="applyscalebias">applyScaleBias</h3>
 <p><em>public void applyScaleBias(const int &amp; sb)</em></p>
-<p><em>Defined at src/rocky/vsg/terrain/TerrainTileNode.h#72</em></p>
+<p><em>Defined at src/rocky/vsg/terrain/TerrainState.h#68</em></p>
 
 
 
@@ -407,10 +438,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>

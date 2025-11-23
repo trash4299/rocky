@@ -11,8 +11,11 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
@@ -20,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.618322db.min.css">
       
       
 
@@ -43,7 +46,6 @@
     
       
 
-    
     
     
   </head>
@@ -195,9 +197,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -228,9 +235,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Reference
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -239,7 +251,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            API Reference
+            
+  
+    API Reference
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -255,9 +271,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Index
+  
+
     
   </span>
+  
   
 
       </a>
@@ -302,7 +323,9 @@
         <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Functions
+      
+        Functions
+      
     </span>
   </a>
   
@@ -312,7 +335,9 @@
           <li class="md-nav__item">
   <a href="#acquire" class="md-nav__link">
     <span class="md-ellipsis">
-      acquire
+      
+        acquire
+      
     </span>
   </a>
   
@@ -321,7 +346,9 @@
           <li class="md-nav__item">
   <a href="#operator" class="md-nav__link">
     <span class="md-ellipsis">
-      operator++
+      
+        operator++
+      
     </span>
   </a>
   
@@ -330,7 +357,9 @@
           <li class="md-nav__item">
   <a href="#release" class="md-nav__link">
     <span class="md-ellipsis">
-      release
+      
+        release
+      
     </span>
   </a>
   
@@ -339,7 +368,9 @@
           <li class="md-nav__item">
   <a href="#operator-" class="md-nav__link">
     <span class="md-ellipsis">
-      operator--
+      
+        operator--
+      
     </span>
   </a>
   
@@ -348,7 +379,9 @@
           <li class="md-nav__item">
   <a href="#reset" class="md-nav__link">
     <span class="md-ellipsis">
-      reset
+      
+        reset
+      
     </span>
   </a>
   
@@ -357,7 +390,9 @@
           <li class="md-nav__item">
   <a href="#count" class="md-nav__link">
     <span class="md-ellipsis">
-      count
+      
+        count
+      
     </span>
   </a>
   
@@ -366,7 +401,9 @@
           <li class="md-nav__item">
   <a href="#join" class="md-nav__link">
     <span class="md-ellipsis">
-      join
+      
+        join
+      
     </span>
   </a>
   
@@ -375,7 +412,9 @@
           <li class="md-nav__item">
   <a href="#join_1" class="md-nav__link">
     <span class="md-ellipsis">
-      join
+      
+        join
+      
     </span>
   </a>
   
@@ -396,6 +435,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -403,38 +443,38 @@
 
 
 <h1 id="class-semaphore">class semaphore</h1>
-<p><em>Defined at src/rocky/weejobs.h#169</em></p>
+<p><em>Defined at src/rocky/weejobs.h#170</em></p>
 <p>Sempahore lets N users aquire it and then notifies when the count goes back down to zero.</p>
 <h2 id="functions">Functions</h2>
 <h3 id="acquire">acquire</h3>
 <p><em>public void acquire()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#173</em></p>
+<p><em>Defined at src/rocky/weejobs.h#174</em></p>
 <p>Acquire, increasing the usage count by one</p>
 <h3 id="operator">operator++</h3>
 <p><em>public void operator++()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#179</em></p>
+<p><em>Defined at src/rocky/weejobs.h#180</em></p>
 <h3 id="release">release</h3>
 <p><em>public void release()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#184</em></p>
+<p><em>Defined at src/rocky/weejobs.h#185</em></p>
 <p>Release, decreasing the usage count by one. When the count reaches zero, joiners will be notified and the semaphore will reset to its initial state.</p>
 <h3 id="operator-">operator--</h3>
 <p><em>public void operator--()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#192</em></p>
+<p><em>Defined at src/rocky/weejobs.h#193</em></p>
 <h3 id="reset">reset</h3>
 <p><em>public void reset()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#196</em></p>
+<p><em>Defined at src/rocky/weejobs.h#197</em></p>
 <p>Reset to initialize state; this will cause a join to occur even if no acquisitions have taken place.</p>
 <h3 id="count">count</h3>
 <p><em>public int count()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#204</em></p>
+<p><em>Defined at src/rocky/weejobs.h#205</em></p>
 <p>Current count in the semaphore</p>
 <h3 id="join">join</h3>
 <p><em>public void join()</em></p>
-<p><em>Defined at src/rocky/weejobs.h#214</em></p>
+<p><em>Defined at src/rocky/weejobs.h#215</em></p>
 <p>Block until the semaphore count returns to zero. (It must first have left zero) Warning: this method will block forever if the count never reaches zero!</p>
 <h3 id="join_1">join</h3>
 <p><em>public void join(cancelable * c)</em></p>
-<p><em>Defined at src/rocky/weejobs.h#224</em></p>
+<p><em>Defined at src/rocky/weejobs.h#225</em></p>
 <p>Block until the semaphore count returns to zero, or the operation is canceled. (It must first have left zero)</p>
 
 
@@ -484,10 +524,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
